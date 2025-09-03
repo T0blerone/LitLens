@@ -1,0 +1,5 @@
+# For a real implementation, you would add libraries like:
+# boto3 (for AWS SQS and S3)
+# opencv-python
+# pytesseract
+# fuzzywuzzy

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  api-service:
+    build: ./api-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api-service:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  processing-worker:
+    build: ./processing-worker
+    volumes:
+      - ./processing-worker:/app
+    environment:
+      - PYTHONUNBUFFERED=1
